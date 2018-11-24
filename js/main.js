@@ -82,62 +82,75 @@ $(window).on('load', function() {
 		}).magnificPopup('open');
 		e.preventDefault();
 	})
-	
+
+	/*------------------
+		Hamburger
+	-------------------*/ 
+	var trigger = $('.hamburger'),
+		overlay = $('.overlay'),
+		isClosed = false;
+
+	trigger.click(function () {
+		hamburger_cross();
+	});
+
+	function hamburger_cross() {
+
+		if (isClosed == true) {
+			overlay.hide();
+			trigger.removeClass('is-open');
+			trigger.addClass('is-closed');
+			isClosed = false;
+		} else {
+			overlay.show();
+			trigger.removeClass('is-closed');
+			trigger.addClass('is-open');
+			isClosed = true;
+		}
+	}
+
+	$('[data-toggle="offcanvas"]').click(function () {
+		$('#wrapper').toggleClass('toggled');
+	});
 	
 if($().circleProgress){
 
-	//Set progress circle 1
-	$("#progress1").circleProgress({
-		value: 0.75,
-		size: 175,
-		thickness: 2,
-		fill: "#40424a",
-		emptyFill: "rgba(0, 0, 0, 0)"
+	$('#progress1').circleProgress({
+		value: 0.7,
+		size: 170,
+		fill: {
+			color: '#ffa500'
+		}
+	}).on('circle-animation-progress', function (event, progress) {
+		$(this).find('strong').html(Math.round(100 * progress) + '<i>%</i>');
 	});
-	//Set progress circle 2
-	$("#progress2").circleProgress({
-		value: 0.83,
-		size: 175,
-		thickness: 2,
-		fill: "#40424a",
-		emptyFill: "rgba(0, 0, 0, 0)"
-	});
-
-	//Set progress circle white
-	$("#progress3").circleProgress({
-		value: 0.75,
-		size: 175,
-		thickness: 2,
-		fill: "#ffffff",
-		emptyFill: "rgba(0, 0, 0, 0)"
+	
+	$('#progress2').circleProgress({
+		value: 0.7,
+		size: 170,
+		fill: "#009fff"
+	}).on('circle-animation-progress', function (event, progress) {
+		$(this).find('strong').html(Math.round(100 * progress) + '<i>%</i>');
 	});
 
-	//Set progress circle white
-	$("#progress4").circleProgress({
-		value: 0.83,
-		size: 175,
-		thickness: 2,
-		fill: "#ffffff",
-		emptyFill: "rgba(0, 0, 0, 0)"
+	$('#progress3').circleProgress({
+		value: 0.7,
+		size: 170,
+		fill: {
+			color: '#ffa500'
+		}
+	}).on('circle-animation-progress', function (event, progress) {
+		$(this).find('strong').html(Math.round(100 * progress) + '<i>%</i>');
 	});
 
-	//Set progress circle skyblue
-	$("#progress5").circleProgress({
-		value: 0.75,
-		size: 175,
-		thickness: 2,
-		fill: "#009fff",
-		emptyFill: "rgba(0, 0, 0, 0)"
+	$('#progress4').circleProgress({
+		value: 0.7,
+		size: 170,
+		fill: "#009fff"
+	}).on('circle-animation-progress', function (event, progress) {
+		$(this).find('strong').html(Math.round(100 * progress) + '<i>%</i>');
 	});
 
-	//Set progress circle skyblue
-	$("#progress6").circleProgress({
-		value: 0.83,
-		size: 175,
-		thickness: 2,
-		fill: "#009fff",
-		emptyFill: "rgba(0, 0, 0, 0)"
-	});
 }
 
 })(jQuery);
