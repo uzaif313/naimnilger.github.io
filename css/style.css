@@ -40,8 +40,9 @@ p {
 	line-height: 1.8;
 }
 
-img {
-	max-width: 100%;
+.profile-img {
+	max-width: 20%;
+  border-radius: 52%;
 }
 
 input:focus,
@@ -410,7 +411,7 @@ ol {
 }
 
 .hero-image {
-	padding-top: 70px;
+	padding-top: 0px;
 }
 
 .hero-info h2 {

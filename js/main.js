@@ -71,11 +71,37 @@ $(window).on('load', function() {
 	/*------------------
 		Popup
 	--------------------*/
+
 	$('.portfolio-item .port-pic').magnificPopup({
 		type: 'image',
 		mainClass: 'img-popup-warp',
 		removalDelay: 500,
+		callbacks: {
+			beforeOpen: function () {
+				console.log('Start of popup initialization');
+				console.log($(this))
+			},
+			change:function(){
+				console.log('Content changed');
+				this.content = $("#carouselExampleFade").html();
+				$("#carouselExampleFade").carousel()
+				console.log(this.content)
+			},
+			open: function () {
+			console.log($(this)[0].currItem)
+				// var owl = $(this).owlCarousel();
+				// var item = '<div class=" item...">your new div</div>';
+				// owl.data('owlCarousel').addItem(item);
+				// owl.reinit();
+			},
+			close: function () {
+				// Will fire when popup is closed
+			}
+			// e.t.c.
+		}
 	});
+
+	// $("#carouselExampleFade").carousel()
 
 
 
