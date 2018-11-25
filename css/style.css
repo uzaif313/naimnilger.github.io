@@ -28,7 +28,7 @@ h6 {
 
 h1.header-name{
 	color: #000;
-	font-size: 2.5em;
+	font-size: 4.5em;
 }
 p.header-sub-text{
 	color:#000;
@@ -391,7 +391,7 @@ ol {
 }
 
 .site-logo p {
-	font-size: 14px;
+	font-size: 23px;
 	line-height: normal;
 }
 
