@@ -368,7 +368,8 @@ ol {
 -----------------------*/
 .header-section {
 	padding: 50px 40px;
-	background: #f2f7f8;
+	/*background: #f2f7f8;*/
+	background-image: url(../img/header.jpg);
 }
 
 .site-logo h2 {
@@ -488,9 +489,11 @@ ol {
 	Resume section
 ----------------------*/
 .resume-section.with-bg {
-	background-image: url(../img/resume-bg.jpg);
+	/*background-image: url(../img/resume-bg.jpg);*/
 	background-repeat: no-repeat;
 	background-size: cover;
+  background: #f7f3e5cc;
+
 }
 
 .resume-list {
@@ -531,7 +534,8 @@ ol {
 	text-transform: uppercase;
 	color: #808181;
 	margin-top: 10px;
-	margin-bottom: 45px;
+	margin-bottom: 5px;
+	/*margin-bottom: 45px;*/
 }
 
 .resume-list p {
@@ -1649,13 +1653,13 @@ ol {
     display: inline-block;
     padding-right: 5px;
 }
-a[href*="#home"]::before {
+a[href*="#general_information"]::before {
   content: "\f015" !important;
 }
 a[href*="#about"]::before {
   content: "\f129" !important;
 }
-a[href*="#events"]::before {
+a[href*="#experience"]::before {
   content: "\f073" !important;
 }
 a[href*="#events"]::before {
@@ -1664,7 +1668,7 @@ a[href*="#events"]::before {
 a[href*="#team"]::before {
   content: "\f0c0" !important;
 }
-a[href*="#works"]::before {
+a[href*="#portfolio"]::before {
   content: "\f0b1" !important;
 }
 a[href*="#pictures"]::before {
@@ -1673,10 +1677,10 @@ a[href*="#pictures"]::before {
 a[href*="#videos"]::before {
   content: "\f03d" !important;
 }
-a[href*="#books"]::before {
+a[href*="#education"]::before {
   content: "\f02d" !important;
 }
-a[href*="#art"]::before {
+a[href*="#skill"]::before {
   content: "\f1fc" !important;
 }
 a[href*="#awards"]::before {
@@ -1820,4 +1824,8 @@ a[href*="#followme"]::before {
 	bottom: 0;
 	background-color: rgba(250, 250, 250, .8);
 	z-index: 1;
+}
+
+.portfolio-section{
+	background: url('../img/center.jpg')
 }
