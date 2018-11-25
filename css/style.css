@@ -26,6 +26,16 @@ h6 {
 	font-family: 'Josefin Sans', sans-serif;
 }
 
+h1.header-name{
+	color: #000;
+	font-size: 2.5em;
+}
+p.header-sub-text{
+	color:#000;
+	font-weight: 100%;
+}
+h4
+
 h2 {
 	font-size: 48px;
 }
@@ -41,7 +51,7 @@ p {
 }
 
 .profile-img {
-	max-width: 20%;
+	max-width: 420%;
   border-radius: 52%;
 }
 
@@ -448,7 +458,6 @@ ol {
 }
 
 .social-section .social-links {
-	display: inline-block;
 	background: #f9f9f9;
 	position: relative;
 	z-index: 5;
@@ -1511,7 +1520,8 @@ ol {
 
 #page-content-wrapper {
     width: 100%;
-    padding-top: 70px;
+    padding-top:0%;
+    /*padding-top: 70px;*/
 }
 
 #wrapper.toggled #page-content-wrapper {
