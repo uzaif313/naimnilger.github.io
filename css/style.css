@@ -51,7 +51,7 @@ p {
 }
 
 .profile-img {
-	max-width: 420%;
+	max-width: 56%;
   border-radius: 52%;
 }
 
@@ -606,12 +606,13 @@ ol {
 
 .portfolio-item h2 {
 	font-size: 24px;
-	margin-bottom: 5px;
+	text-align: center;
+	/*margin-bottom: 5px;*/
 }
 
 .portfolio-item p {
 	font-size: 14px;
-	margin-bottom: 0;
+	/*margin-bottom: 0;*/
 }
 
 .portfolio-item .port-pic {
@@ -1418,9 +1419,17 @@ ol {
 
 /* small Mobile :320px. */
 @media only screen and (max-width: 479px) {
+	.center-image{
+		text-align:center;
+	}
 	.hero-text h2 {
 		font-size: 50px;
 	}
+
+	.hero-info h2 {
+		text-align:center;
+	}
+
 	.hero-info ul li {
 		font-size: 18px;
 	}
