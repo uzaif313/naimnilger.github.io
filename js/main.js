@@ -124,7 +124,7 @@ $('[data-toggle="offcanvas"]').click(function () {
 if($().circleProgress){
 
 	$('#progress1').circleProgress({
-		value: 0.7,
+		value: 0.83,
 		size: 170,
 		fill: {
 			color: '#ffa500'
@@ -134,7 +134,7 @@ if($().circleProgress){
 	});
 	
 	$('#progress2').circleProgress({
-		value: 0.7,
+		value: 0.25,
 		size: 170,
 		fill: "#009fff"
 	}).on('circle-animation-progress', function (event, progress) {
@@ -142,19 +142,19 @@ if($().circleProgress){
 	});
 
 	$('#progress3').circleProgress({
-		value: 0.7,
+		value: 0.70,
 		size: 170,
 		fill: {
-			color: '#ffa500'
+			color: '#009fff'
 		}
 	}).on('circle-animation-progress', function (event, progress) {
 		$(this).find('strong').html(Math.round(100 * progress) + '<i>%</i>');
 	});
 
 	$('#progress4').circleProgress({
-		value: 0.7,
+		value: 0.6,
 		size: 170,
-		fill: "#009fff"
+		fill: "#ffa500"
 	}).on('circle-animation-progress', function (event, progress) {
 		$(this).find('strong').html(Math.round(100 * progress) + '<i>%</i>');
 	});

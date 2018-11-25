@@ -501,7 +501,7 @@ ol {
 	/*background-image: url(../img/resume-bg.jpg);*/
 	background-repeat: no-repeat;
 	background-size: cover;
-  background: #f7f3e5cc;
+  background: #f2f7f8;
 
 }
 
@@ -1838,4 +1838,7 @@ a[href*="#followme"]::before {
 
 .portfolio-section{
 	background: url('../img/center.jpg')
+}
+.portfolio-caption{
+	color:#000;
 }
